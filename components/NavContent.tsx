@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 import NavLinks from "./NavLinks";
 
 export const navLinks = [
-  { title: "Home", link: "/#" },
-  { title: "About", link: "/#about" },
-  { title: "Projects", link: "/#projects" },
-  { title: "Contact", link: "/#contact" },
+  { title: "Home", link: "#" },
+  { title: "About", link: "#about" },
+  { title: "Projects", link: "#projects" },
+  { title: "Contact", link: "#contact" },
 ];
 
 const NavContent = () => {
@@ -37,7 +37,7 @@ const NavContent = () => {
   return (
     <section
       className={`fixed w-full z-20 transition-all duration-200 ease-in overflow-hidden ${
-        showNavbar ? "sm:top-8 top-7" : "-top-16"
+        showNavbar ? "sm:top-9 top-7" : "-top-16"
       }`}
     >
       <nav className="max-container flex items-center justify-center">
