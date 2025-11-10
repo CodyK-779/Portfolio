@@ -41,13 +41,13 @@ const AboutContent = () => {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <h1 className="text-4xl md:text-5xl font-bold mb-3">
+        <h1 className="lg:text-5xl sm:text-4xl min-[400px]:text-4xl text-3xl font-bold mb-3">
           About{" "}
           <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             Me
           </span>
         </h1>
-        <p className="text-xl font-medium text-neutral-300 max-w-2xl mx-auto">
+        <p className="lg:text-xl sm:text-lg min-[400px]:text-base text-sm font-medium text-neutral-300 max-w-2xl mx-auto">
           Passionate about crafting digital experiences that are both beautiful
           and functional
         </p>
