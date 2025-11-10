@@ -84,15 +84,15 @@
 
 @layer utilities {
   .max-container {
-    @apply max-w-7xl mx-auto px-4
+    @apply max-w-6xl mx-auto px-4
   }
 
   .lg-rainbow-btn {
-    @apply h-11 rounded-xl px-8
+    @apply h-11 rounded-lg px-8
   }
 
   .sm-rainbow-btn {
-    @apply h-8 rounded-xl px-3 text-xs
+    @apply h-8 rounded px-3 text-xs
   }
 
   .raindow-icon {
