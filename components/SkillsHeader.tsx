@@ -21,7 +21,7 @@ const SkillsHeader = () => {
         <p className="font-medium">Technical Stack</p>
       </div>
 
-      <h2 className="lg:text-5xl md:text-4xl text-3xl font-bold sm:mb-4 mb-3">
+      <h2 className="md:text-5xl min-[400px]:text-4xl text-3xl font-bold sm:mb-4 mb-3">
         Technical{" "}
         <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           Skills

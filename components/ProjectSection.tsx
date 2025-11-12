@@ -55,6 +55,7 @@ const ProjectSection = () => {
                         alt={tool.name}
                         fill
                         className="object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
                       />
                     </div>
                     {tool.name}

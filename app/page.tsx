@@ -3,13 +3,15 @@ import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
 import SkillsSection from "@/components/Deepseek";
 import Skills from "@/components/Skills";
+import SkillsSection2 from "@/components/DSSkills";
 
 export default function HomePage() {
   return (
     <>
       <HeroSection />
       <Skills />
-      <SkillsSection />
+      {/* <SkillsSection /> */}
+      <SkillsSection2 />
       <AboutPage />
       <Projects />
     </>
