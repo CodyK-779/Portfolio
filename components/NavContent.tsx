@@ -6,6 +6,7 @@ import NavLinks from "./NavLinks";
 export const navLinks = [
   { title: "Home", link: "#" },
   { title: "About", link: "#about" },
+  { title: "Skills", link: "#skills" },
   { title: "Projects", link: "#projects" },
   { title: "Contact", link: "#contact" },
 ];
@@ -41,7 +42,7 @@ const NavContent = () => {
       }`}
     >
       <nav className="max-container flex items-center justify-center">
-        <div className="bg-white/10 backdrop-blur-md border border-white/20 px-1.5 py-1.5 min-[425px]:text-[15px] min-[375px]:text-sm text-xs rounded-full">
+        <div className="bg-white/10 backdrop-blur-md border border-white/20 px-1.5 py-1.5 min-[460px]:text-[15px] min-[420px]:text-sm text-xs rounded-full">
           <NavLinks />
         </div>
       </nav>

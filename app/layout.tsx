@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import DarkVeil from "@/components/DarkVeil";
 import Navbar from "@/components/Navbar";
 import "remixicon/fonts/remixicon.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import DVContainer from "@/components/DVContainer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={`${poppins.variable} text-white`}>
         <div style={{ width: "100%", height: "600px", position: "relative" }}>
-          <DarkVeil />
+          <DVContainer />
           <Navbar />
           <TooltipProvider>
             <main className="overflow-hidden pb-20">{children}</main>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { projectsData } from "./projectsData";
 import { RainbowButton } from "./ui/rainbow-button";
 import { ExternalLink } from "lucide-react";
+import { ShineBorder } from "./ui/shine-border";
 
 const ProjectSection = () => {
   return (
@@ -9,8 +10,12 @@ const ProjectSection = () => {
       {projectsData.map((data) => (
         <div
           key={data.title}
-          className="border border-neutral-600 bg-black rounded-lg overflow-hidden cursor-pointer group"
+          className="relative border border-neutral-600 bg-black rounded-lg overflow-hidden cursor-pointer group"
         >
+          <ShineBorder
+            className="opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in"
+            shineColor={["#ef4444", "#2563eb", "#ef4444", "#2563eb"]}
+          />
           <a href={data.link}>
             <div className="relative w-full aspect-video min-[1180px]:h-48">
               <Image
