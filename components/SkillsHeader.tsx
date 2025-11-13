@@ -16,9 +16,9 @@ const SkillsHeader = () => {
       transition={{ duration: 0.8 }}
       className="text-center mb-16"
     >
-      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-600 text-sm mb-6">
-        <Zap className="w-4 h-4" />
-        <p className="font-medium">Technical Stack</p>
+      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-600 mb-6">
+        <Zap className="sm:size-4 size-3.5" />
+        <p className="sm:text-sm text-xs font-medium">Technical Stack</p>
       </div>
 
       <h2 className="md:text-5xl min-[400px]:text-4xl text-3xl font-bold sm:mb-4 mb-3">

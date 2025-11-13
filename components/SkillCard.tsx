@@ -21,14 +21,13 @@ const SkillCard = ({ tabValue, skillData }: Props) => {
         {skillData.map((skill) => (
           <div
             key={skill.name}
-            className="flex items-center gap-3.5 p-3.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 group hover:-translate-y-1.5 transition-transform duration-300 ease-in"
+            className="flex min-[580px]:flex-row flex-col items-center gap-3.5 min-[580px]:p-3.5 px-2 py-3.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 group hover:-translate-y-1.5 transition-transform duration-300 ease-in"
           >
             <ShineBorder
               className="opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in"
-              // shineColor={["#ef4444", "#2563eb", "#ef4444", "#2563eb"]}
               shineColor={skill.color}
             />
-            <div className="relative min-[654px]:size-11 size-10 rounded overflow-hidden ">
+            <div className="relative min-[654px]:size-11 min-[375px]:size-10 size-9 rounded overflow-hidden ">
               <Image
                 src={skill.img}
                 alt={skill.name}
@@ -37,11 +36,13 @@ const SkillCard = ({ tabValue, skillData }: Props) => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 25vw"
               />
             </div>
-            <div className="flex flex-col gap-0.5">
-              <p className="min-[654px]:text-lg text-base font-semibold">
+            <div className="flex flex-col min-[580px]:text-start text-center min-[580px]:gap-0.5 gap-1">
+              <p className="min-[654px]:text-lg min-[375px]:text-base text-sm font-semibold">
                 {skill.name}
               </p>
-              <p className="text-sm text-neutral-300">{skill.desc}</p>
+              <p className="min-[400px]:text-sm text-xs text-neutral-300">
+                {skill.desc}
+              </p>
             </div>
           </div>
         ))}
