@@ -6,6 +6,7 @@ interface DataType {
   name: string;
   img: string;
   desc: string;
+  color: string[];
 }
 
 interface Props {
@@ -24,7 +25,8 @@ const SkillCard = ({ tabValue, skillData }: Props) => {
           >
             <ShineBorder
               className="opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in"
-              shineColor={["#ef4444", "#2563eb", "#ef4444", "#2563eb"]}
+              // shineColor={["#ef4444", "#2563eb", "#ef4444", "#2563eb"]}
+              shineColor={skill.color}
             />
             <div className="relative min-[654px]:size-11 size-10 rounded overflow-hidden ">
               <Image
