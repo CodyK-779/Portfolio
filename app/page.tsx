@@ -4,6 +4,7 @@ import Projects from "@/components/Projects";
 import SkillsSection from "@/components/Deepseek";
 import Skills from "@/components/Skills";
 import SkillsSection2 from "@/components/DSSkills";
+import AboutSection from "@/components/AboutSection";
 
 export default function HomePage() {
   return (
@@ -11,8 +12,9 @@ export default function HomePage() {
       <HeroSection />
       <Skills />
       {/* <SkillsSection /> */}
-      <SkillsSection2 />
-      <AboutPage />
+      {/* <SkillsSection2 /> */}
+      {/* <AboutPage /> */}
+      <AboutSection />
       <Projects />
     </>
   );

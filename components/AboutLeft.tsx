@@ -30,18 +30,18 @@ const AboutLeft = () => {
 
       <motion.div
         variants={itemVariants}
-        className="bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-blue-900/20 p-6 rounded-2xl border border-gray-200 dark:border-gray-800"
+        className="bg-white/5 backdrop-blur-sm p-6 rounded-2xl "
       >
-        <h3 className="text-xl font-semibold mb-4 flex items-center text-neutral-700 gap-2">
+        <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
           <Zap className="w-5 h-5 text-blue-600" />
           My Approach
         </h3>
-        <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+        <ul className="space-y-3 text-neutral-300">
           <li className="flex items-start gap-3">
             <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0" />
             <span>
-              <strong>Clean Code:</strong> Readable, maintainable, and
-              well-documented
+              <strong className="text-white">Clean Code:</strong> Readable,
+              maintainable, and well-documented
             </span>
           </li>
           <li className="flex items-start gap-3">

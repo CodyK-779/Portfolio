@@ -20,7 +20,7 @@ export const allSkills = [
   {
     name: "React",
     img: "/react-logo.png",
-    desc: "Component architecture",
+    desc: "Component Library",
     color: ["#61dafb", "#00d8ff", "#61dafb", "#00d8ff"],
   },
   {
@@ -113,7 +113,7 @@ export const frontendData = [
   {
     name: "React",
     img: "/react-logo.png",
-    desc: "Component architecture",
+    desc: "Component Library",
     color: ["#61dafb", "#00d8ff", "#61dafb", "#00d8ff"],
   },
   {

@@ -21,7 +21,7 @@ const SkillCard = ({ tabValue, skillData }: Props) => {
         {skillData.map((skill) => (
           <div
             key={skill.name}
-            className="flex min-[580px]:flex-row flex-col items-center gap-3.5 min-[580px]:p-3.5 px-2 py-3.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 group hover:-translate-y-1.5 transition-transform duration-300 ease-in"
+            className="flex min-[580px]:flex-row flex-col items-center gap-3.5 min-[580px]:p-3.5 px-2 py-3.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 group hover:-translate-y-1.5 transition-transform duration-200 ease-in"
           >
             <ShineBorder
               className="opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in"
