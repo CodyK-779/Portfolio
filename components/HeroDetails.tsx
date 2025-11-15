@@ -1,11 +1,19 @@
+"use client";
+
 import { RainbowButton } from "./ui/rainbow-button";
 import Link from "next/link";
 import { socialIcons } from "./HeroSection";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
+import { motion } from "framer-motion";
 
 const HeroDetails = () => {
   return (
-    <div className="flex flex-col lg:text-start text-center order-2 lg:order-1 lg:mt-0 md:mt-10">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="flex flex-col lg:text-start text-center order-2 lg:order-1 lg:mt-0 md:mt-10 transition-all duration-300 ease-out"
+    >
       <p className="min-[450px]:text-3xl min-[375px]:text-2xl text-xl font-bold">
         Hi, I'm{" "}
         <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -57,7 +65,7 @@ const HeroDetails = () => {
           </a>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
