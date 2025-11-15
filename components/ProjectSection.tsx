@@ -1,16 +1,27 @@
+"use client";
+
 import Image from "next/image";
 import { projectsData } from "./projectsData";
 import { RainbowButton } from "./ui/rainbow-button";
 import { ExternalLink } from "lucide-react";
 import { ShineBorder } from "./ui/shine-border";
+import { motion } from "framer-motion";
 
 const ProjectSection = () => {
   return (
-    <section className="grid min-[1180px]:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-4 gap-6">
-      {projectsData.map((data) => (
-        <div
+    <motion.section
+      initial="hidden"
+      animate="show"
+      className="grid min-[1180px]:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-4 gap-6 transition-all duration-300 ease-out"
+    >
+      {projectsData.map((data, index) => (
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: index * 0.25 }}
           key={data.title}
-          className="relative border border-neutral-600 bg-black rounded-lg overflow-hidden cursor-pointer group"
+          className="relative border border-neutral-600 bg-black rounded-lg overflow-hidden cursor-pointer group transition-all duration-300 ease-out"
         >
           <ShineBorder
             className="opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in"
@@ -89,9 +100,9 @@ const ProjectSection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
-    </section>
+    </motion.section>
   );
 };
 

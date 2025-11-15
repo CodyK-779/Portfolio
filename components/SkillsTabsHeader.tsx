@@ -1,29 +1,40 @@
-import { Database, Globe, Palette, Server, Wrench } from "lucide-react";
+"use client";
+
+import { Globe, Palette, Server, Wrench } from "lucide-react";
 import { TabsList, TabsTrigger } from "./ui/tabs";
+import { motion } from "framer-motion";
 
 const SkillsTabsHeader = () => {
   const tabStyle =
     "flex item-center gap-2 sm:text-[15px] min-[400px]:text-sm text-xs font-medium py-2 rounded-full data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:to-purple-600 data-[state=active]:text-white";
 
   return (
-    <TabsList className="rounded-full sm:gap-2 min-[460px]:gap-1.5 gap-0 max-[375px]:gap-1.5 bg-white/10 backdrop-blur-md border border-white/20 text-white min-[400px]:py-[22px] py-[20px] px-1">
-      <TabsTrigger value="all" className={tabStyle}>
-        <Globe className="min-[400px]:size-4 size-3.5 max-[375px]:hidden" />
-        All
-      </TabsTrigger>
-      <TabsTrigger value="frontend" className={tabStyle}>
-        <Palette className="min-[400px]:size-4 size-3.5 max-[375px]:hidden" />
-        Frontend
-      </TabsTrigger>
-      <TabsTrigger value="backend" className={tabStyle}>
-        <Server className="min-[400px]:size-4 size-3.5 max-[375px]:hidden" />
-        Backend
-      </TabsTrigger>
-      <TabsTrigger value="tools" className={tabStyle}>
-        <Wrench className="min-[400px]:size-4 size-3.5 max-[375px]:hidden" />
-        Tools
-      </TabsTrigger>
-    </TabsList>
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      className="transition-transform duration-300 ease-out"
+    >
+      <TabsList className="rounded-full sm:gap-2 min-[460px]:gap-1.5 gap-0 max-[375px]:gap-1.5 bg-white/10 backdrop-blur-md border border-white/20 text-white min-[400px]:py-[22px] py-[20px] px-1">
+        <TabsTrigger value="all" className={tabStyle}>
+          <Globe className="min-[400px]:size-4 size-3.5 max-[375px]:hidden" />
+          All
+        </TabsTrigger>
+        <TabsTrigger value="frontend" className={tabStyle}>
+          <Palette className="min-[400px]:size-4 size-3.5 max-[375px]:hidden" />
+          Frontend
+        </TabsTrigger>
+        <TabsTrigger value="backend" className={tabStyle}>
+          <Server className="min-[400px]:size-4 size-3.5 max-[375px]:hidden" />
+          Backend
+        </TabsTrigger>
+        <TabsTrigger value="tools" className={tabStyle}>
+          <Wrench className="min-[400px]:size-4 size-3.5 max-[375px]:hidden" />
+          Tools
+        </TabsTrigger>
+      </TabsList>
+    </motion.div>
   );
 };
 
