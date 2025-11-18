@@ -1,6 +1,7 @@
 import AboutLeft from "./AboutLeft";
 import AboutRight from "./AboutRight";
 import AboutHeader from "./AboutHeader";
+import ContactCTA from "./ContactCTA";
 
 export default function AboutSection() {
   return (
@@ -15,6 +16,8 @@ export default function AboutSection() {
         {/* Right Column - Approach & Value */}
         <AboutRight />
       </div>
+
+      <ContactCTA />
     </section>
   );
 }

@@ -23,7 +23,7 @@ const SkillCard = ({ tabValue, skillData }: Props) => {
       <motion.div
         initial="hidden"
         animate="show"
-        className="grid min-[972px]:grid-cols-3 grid-cols-2 gap-4 transition-all duration-300 ease-out"
+        className="grid min-[972px]:grid-cols-3 min-[580px]:grid-cols-2 grid-cols-3 gap-4 transition-all duration-300 ease-out"
       >
         {skillData.map((skill, index) => (
           <motion.div
@@ -52,7 +52,7 @@ const SkillCard = ({ tabValue, skillData }: Props) => {
                 <p className="min-[654px]:text-lg min-[375px]:text-base text-sm font-semibold">
                   {skill.name}
                 </p>
-                <p className="min-[400px]:text-sm text-xs text-neutral-300">
+                <p className="hidden min-[580px]:block min-[400px]:text-sm text-xs text-neutral-300">
                   {skill.desc}
                 </p>
               </div>

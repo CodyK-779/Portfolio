@@ -14,7 +14,6 @@ export const socialIcons = [
     href: "#",
     color: "bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500",
   },
-
   {
     icon: "ri-linkedin-box-fill",
     name: "Linkedin",
