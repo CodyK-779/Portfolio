@@ -18,12 +18,9 @@ import {
 import { z } from "zod";
 import { Input } from "./ui/input";
 import { formSchema } from "./form/schema";
-import { send } from "./form/email";
-import { useActionState } from "react";
+import { submitForm } from "./form/action";
 
 const ContactForm = () => {
-  // const [] = useActionState(SubmitForm, {});
-
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -34,8 +31,7 @@ const ContactForm = () => {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    send(values);
-    console.log(values);
+    submitForm(values);
   }
 
   return (
