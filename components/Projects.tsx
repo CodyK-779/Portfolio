@@ -4,7 +4,7 @@ import ProjectSection from "./ProjectSection";
 const Projects = () => {
   return (
     <section
-      className="max-w-7xl px-4 mx-auto min-h-screen my-36"
+      className="max-w-7xl px-4 mx-auto min-h-screen my-60"
       id="projects"
     >
       <ProjectHeader />

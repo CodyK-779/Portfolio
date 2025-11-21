@@ -4,7 +4,7 @@ import ContactForm from "./contact-form";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="max-container min-h-screen my-20">
+    <section id="contact" className="max-container min-h-screen mt-60 mb-20">
       {/* Header */}
       <ContactHeader />
 

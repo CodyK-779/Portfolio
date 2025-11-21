@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { Globe } from "lucide-react";
 import { contactMethods } from "./contactData";
-import { BorderBeam } from "./ui/border-beam";
 
 const ContactLeft = () => {
   return (
@@ -39,7 +38,6 @@ const ContactLeft = () => {
                 {method.value}
               </div>
             </div>
-            <BorderBeam duration={8} size={100} />
           </motion.div>
         ))}
       </div>

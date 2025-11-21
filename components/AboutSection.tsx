@@ -5,7 +5,7 @@ import ContactCTA from "./ContactCTA";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="max-container min-h-screen py-20">
+    <section id="about" className="max-container min-h-screen my-60">
       {/* Header */}
       <AboutHeader />
 
