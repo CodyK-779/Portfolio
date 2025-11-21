@@ -31,7 +31,7 @@ export const socialIcons = [
 const HeroSection = () => {
   return (
     <section className="max-w-5xl mx-auto px-4 min-h-screen flex justify-center lg:mt-6 mt-28">
-      <div className="grid lg:grid-cols-2 w-full grid-cols-1 items-center justify-center lg:gap-16">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-center lg:gap-16 gap-10">
         {/* First Column */}
         <HeroDetails />
 

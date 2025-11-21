@@ -5,7 +5,7 @@ import ContactCTA from "./ContactCTA";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="max-container min-h-screen my-60">
+    <section id="about" className="max-container min-h-screen my-40">
       {/* Header */}
       <AboutHeader />
 

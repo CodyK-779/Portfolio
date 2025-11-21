@@ -12,7 +12,7 @@ const HeroDetails = () => {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="flex flex-col lg:text-start text-center order-2 lg:order-1 lg:mt-0 md:mt-10 transition-all duration-300 ease-out"
+      className="flex flex-col lg:text-start text-center lg:mt-0 md:mt-10 transition-all duration-300 ease-out"
     >
       <p className="min-[450px]:text-3xl min-[375px]:text-2xl text-xl font-bold">
         Hi, I'm{" "}

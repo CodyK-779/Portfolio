@@ -46,10 +46,10 @@ const Footer = () => {
     <section className="w-full py-8 border-t border-white/10 bg-black/10 backdrop-blur-sm">
       <div className="max-container w-full grid lg:grid-cols-3 grid-cols-1 gap-5 items-center justify-between">
         <div className="flex flex-col lg:text-left text-center gap-1">
-          <p className="text-sm font-medium text-neutral-400">
+          <p className="text-sm font-medium text-neutral-300">
             © {currentYear} Khant Zaw Thein
           </p>
-          <p className="text-xs text-neutral-500">
+          <p className="text-xs text-neutral-400">
             Crafting digital experiences with modern tech
           </p>
         </div>
@@ -72,7 +72,7 @@ const Footer = () => {
         <ul className="flex items-center gap-4 min-[350px]:text-sm text-xs font-medium lg:justify-end justify-center">
           {navLinks.map((link) => (
             <Link href={link.link} key={link.title}>
-              <li className="text-neutral-400 hover:text-blue-600 transition-colors duration-200 ease-in">
+              <li className="text-neutral-300 hover:text-blue-600 transition-colors duration-200 ease-in">
                 {link.title}
               </li>
             </Link>
