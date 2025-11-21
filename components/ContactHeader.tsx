@@ -17,7 +17,7 @@ const ContactHeader = () => {
         <p className="font-medium">Open to Opportunities</p>
       </div>
 
-      <h2 className="lg:text-5xl md:text-4xl min-[400px]:text-3xl min-[350px]:text-2xl text-2xl font-bold min-[400px]:mb-4 mb-2.5">
+      <h2 className="md:text-5xl min-[400px]:text-4xl text-3xl font-bold min-[400px]:mb-4 mb-2.5">
         Get In{" "}
         <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           Touch

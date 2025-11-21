@@ -50,7 +50,7 @@ const SkillCard = ({ tabValue, skillData }: Props) => {
               </div>
               <div className="flex flex-col min-[580px]:text-start text-center min-[580px]:gap-0.5 gap-1">
                 <p
-                  className={`min-[654px]:text-lg min-[450px]:text-base min-[375px]:text-sm ${skill.name === "Better-auth" ? "min-[334px]:text-xs text-[11.2px]" : "text-xs"} text-xs font-semibold`}
+                  className={`min-[654px]:text-lg min-[450px]:text-base min-[375px]:text-sm ${skill.name === "Better-auth" ? "min-[334px]:text-xs text-[11.1px]" : "text-xs"} text-xs font-semibold`}
                 >
                   {skill.name}
                 </p>
