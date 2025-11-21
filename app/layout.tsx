@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${poppins.variable} text-white`}>
+      <body className={`${poppins.variable} text-white bg-black`}>
         <div style={{ width: "100%", height: "600px", position: "relative" }}>
           <DVContainer />
           <Navbar />

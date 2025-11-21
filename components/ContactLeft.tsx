@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Globe } from "lucide-react";
 import { contactMethods } from "./contactData";
 import ContactSocials from "./ContactSocials";
+import { BorderBeam } from "./ui/border-beam";
 
 const ContactLeft = () => {
   return (
@@ -22,7 +23,7 @@ const ContactLeft = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-            className="flex items-center gap-4 p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl"
+            className="relative flex items-center gap-4 p-4 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl"
           >
             <div
               className={`p-3 rounded-xl bg-gradient-to-r ${method.color} text-white`}
@@ -35,6 +36,7 @@ const ContactLeft = () => {
                 {method.value}
               </div>
             </div>
+            <BorderBeam duration={8} size={100} />
           </motion.div>
         ))}
       </div>
