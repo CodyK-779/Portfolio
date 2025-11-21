@@ -30,7 +30,7 @@ const SkillCard = ({ tabValue, skillData }: Props) => {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: index * 0.15 }}
+            transition={{ duration: 0.4, delay: index * 0.15 }}
             key={skill.name}
             className="transition-all duration-300 ease-out"
           >

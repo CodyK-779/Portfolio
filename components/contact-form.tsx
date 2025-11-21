@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import { Send } from "lucide-react";
+import { Loader2, Send } from "lucide-react";
 import { Textarea } from "./ui/textarea";
 import { RainbowButton } from "./ui/rainbow-button";
 import {
@@ -18,9 +18,16 @@ import {
 import { z } from "zod";
 import { Input } from "./ui/input";
 import { formSchema } from "./form/schema";
-import { submitForm } from "./form/action";
+import { useState, ViewTransition } from "react";
+import AutoFadeMsg from "./AutoFadeMsg";
 
 const ContactForm = () => {
+  const [pending, setPending] = useState(false);
+  const [results, setResults] = useState<{
+    success: boolean;
+    message: string;
+  } | null>(null);
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -30,9 +37,27 @@ const ContactForm = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    submitForm(values);
-  }
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    setPending(true);
+    setResults(null);
+
+    try {
+      const { submitForm } = await import("./form/action");
+      const result = await submitForm(values);
+      setResults(result);
+
+      if (results?.success) {
+        form.reset();
+      }
+    } catch (error) {
+      setResults({
+        success: false,
+        message: "An unexpected error occoured",
+      });
+    } finally {
+      setPending(false);
+    }
+  };
 
   return (
     <motion.div
@@ -59,8 +84,9 @@ const ContactForm = () => {
                     <FormControl>
                       <Input
                         {...field}
+                        disabled={pending}
                         placeholder="Enter Your Name"
-                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-neutral-400 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition-colors duration-300"
+                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition-colors duration-300"
                       />
                     </FormControl>
                     <FormMessage />
@@ -80,8 +106,9 @@ const ContactForm = () => {
                     <FormControl>
                       <Input
                         {...field}
+                        disabled={pending}
                         placeholder="john@example.com"
-                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-neutral-400 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition-colors duration-300"
+                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition-colors duration-300"
                       />
                     </FormControl>
                     <FormMessage />
@@ -101,8 +128,9 @@ const ContactForm = () => {
                     <FormControl>
                       <Textarea
                         rows={5}
+                        disabled={pending}
                         placeholder="How can i help you?"
-                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-neutral-400 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition-colors duration-300 resize-none"
+                        className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:bg-white/10 transition-colors duration-300 resize-none"
                         {...field}
                       />
                     </FormControl>
@@ -112,15 +140,38 @@ const ContactForm = () => {
               />
             </div>
           </div>
-
-          <RainbowButton
-            type="submit"
-            variant="outline"
-            className="w-full flex items-center gap-2 min-[500px]:lg-rainbow-btn mt-8 group hover:scale-105 transition-transform duration-300 ease-out"
-          >
-            <Send className="size-4 group-hover:-translate-y-1 transition-transform duration-300 ease-out" />
-            <p>Send Message</p>
-          </RainbowButton>
+          <div className="flex flex-col gap-4 mt-8">
+            <RainbowButton
+              type="submit"
+              variant="outline"
+              disabled={pending}
+              className="w-full flex items-center gap-2 min-[500px]:lg-rainbow-btn group hover:scale-105 transition-transform duration-300 ease-out"
+            >
+              {pending ? (
+                <>
+                  <Loader2 className="animate-spin" />
+                  Loading...
+                </>
+              ) : (
+                <>
+                  <Send className="size-4 group-hover:-translate-y-1 transition-transform duration-300 ease-out" />
+                  <p>Send Message</p>
+                </>
+              )}
+            </RainbowButton>{" "}
+            {results?.success && (
+              <ViewTransition>
+                <AutoFadeMsg message={results.message} duration={5000} />
+              </ViewTransition>
+            )}
+            {results?.success === false && (
+              <ViewTransition>
+                <p className="text-center text-sm text-red-500">
+                  An unexpected error occoured.
+                </p>
+              </ViewTransition>
+            )}
+          </div>
         </form>
       </Form>
     </motion.div>

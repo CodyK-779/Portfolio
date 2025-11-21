@@ -8,19 +8,35 @@ import EmailTemplate from "@/emails/email-template";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const submitForm = async (formData: z.infer<typeof formSchema>) => {
-  await resend.emails.send({
+  try {
+    await resend.emails.send({
     from: `Portfolio <${process.env.RESEND_FROM_EMAIL}>`,
     to: ['codyk9627@gmail.com'],
-    subject: 'Job',
-    react:  EmailTemplate({ name: formData.name, email: formData.email, message: formData.message, subject: "Job" }),
+    subject: `Portfolio Message`,
+    replyTo: formData.email,
+    headers: {
+    'X-Entity-Ref-ID': `${Date.now()}`,
+    },
+    react: EmailTemplate({ name: formData.name, email: formData.email, message: formData.message, subject: "Portfolio Message" }),
   });
 
-  await resend.emails.send({
+  { /*
+    await resend.emails.send({
     from: `Portfolio <${process.env.RESEND_FROM_EMAIL}>`,
     to: [`${formData.email}`],
     subject: `Thanks for reaching out!`,
+    replyTo: formData.email,
+    headers: {
+    'X-Entity-Ref-ID': `${Date.now()}`,
+    },
     react: EmailTemplate({ name: "Cody", email: "codyk9627@gmail.com", message: "Thanks for reaching out!", subject: "Thank you" })
   })
+  */}
+  
 
-  return Response.json({ success: true });
+  return { success: true, message: "✓ Success! I'll get back to you as soon as possible." }
+  } catch (error) {
+    console.error("Email error:", error);
+    return { success: false, message: "An unexpected error occurred" }
+  }
 };
