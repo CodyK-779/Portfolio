@@ -65,9 +65,11 @@ const ContactForm = () => {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-6"
+      className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl min-[375px]:p-6 px-4 py-6"
     >
-      <h3 className="text-2xl font-bold text-white mb-6">Send a Message</h3>
+      <h3 className="min-[400px]:text-2xl text-xl font-bold text-white mb-6">
+        Send a Message
+      </h3>
 
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
@@ -145,7 +147,7 @@ const ContactForm = () => {
               type="submit"
               variant="outline"
               disabled={pending}
-              className="w-full flex items-center gap-2 min-[500px]:lg-rainbow-btn group hover:scale-105 transition-transform duration-300 ease-out"
+              className="w-full flex items-center gap-2 min-[500px]:lg-rainbow-btn min-[375px]:default-rainbow-btn sm-rainbow-btn group hover:scale-105 transition-transform duration-300 ease-out"
             >
               {pending ? (
                 <>

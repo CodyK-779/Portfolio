@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import "remixicon/fonts/remixicon.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import DVContainer from "@/components/DVContainer";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -29,7 +30,10 @@ export default function RootLayout({
           <DVContainer />
           <Navbar />
           <TooltipProvider>
-            <main className="overflow-hidden pb-20">{children}</main>
+            <main className="overflow-hidden pb-10">{children}</main>
+          </TooltipProvider>
+          <TooltipProvider>
+            <Footer />
           </TooltipProvider>
         </div>
       </body>

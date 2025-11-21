@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Globe } from "lucide-react";
 
 const ProjectHeader = () => {
   return (
@@ -11,6 +12,10 @@ const ProjectHeader = () => {
       transition={{ duration: 0.8 }}
       className="text-center mb-16 transition-all duration-300 ease-out"
     >
+      <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-500 text-sm mb-6">
+        <Globe className="w-4 h-4" />
+        <p className="font-medium">Production Apps</p>
+      </div>
       <h1 className="lg:text-5xl md:text-4xl min-[400px]:text-3xl min-[350px]:text-2xl text-2xl font-bold min-[400px]:mb-4 mb-2.5">
         Featured{" "}
         <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">

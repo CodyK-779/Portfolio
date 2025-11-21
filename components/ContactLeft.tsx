@@ -16,7 +16,9 @@ const ContactLeft = () => {
     >
       {/* Professional Status */}
       <div className="space-y-4">
-        <h3 className="text-2xl font-bold text-white mb-6">Get In Touch</h3>
+        <h3 className="min-[400px]:text-2xl text-xl font-bold text-white mb-6">
+          Connect With Me
+        </h3>
         {contactMethods.map((method, index) => (
           <motion.div
             key={method.label}
@@ -42,7 +44,7 @@ const ContactLeft = () => {
       </div>
 
       {/* Social Icons */}
-      <ContactSocials />
+      {/* <ContactSocials /> */}
 
       {/* Remote Work Ready */}
       <motion.div
