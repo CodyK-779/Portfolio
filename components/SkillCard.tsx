@@ -34,7 +34,7 @@ const SkillCard = ({ tabValue, skillData }: Props) => {
         }}
         className="grid min-[972px]:grid-cols-3 min-[580px]:grid-cols-2 grid-cols-3 min-[580px]:gap-4 gap-2.5 transition-all duration-300 ease-out"
       >
-        {skillData.map((skill, index) => (
+        {skillData.map((skill) => (
           <motion.div
             variants={{
               hidden: { opacity: 0, y: 30 },

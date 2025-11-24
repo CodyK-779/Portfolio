@@ -18,10 +18,10 @@ const AutoFadeMsg = ({ message, duration = 5000 }: Props) => {
     return () => clearTimeout(timer);
   }, [duration]);
 
+  if (!visible) return null;
+
   return (
-    <div
-      className={`${visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2"} transition-all duration-500 ease-out`}
-    >
+    <div>
       <p className="text-center sm:text-sm text-xs text-green-500">{message}</p>
     </div>
   );

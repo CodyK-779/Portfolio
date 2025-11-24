@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import NavLinks from "./NavLinks";
 
 export const navLinks = [
-  { title: "Home", link: "#" },
-  { title: "About", link: "#about" },
+  { title: "Home", link: "/" },
   { title: "Skills", link: "#skills" },
+  { title: "About", link: "#about" },
   { title: "Projects", link: "#projects" },
   { title: "Contact", link: "#contact" },
 ];

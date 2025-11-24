@@ -2,9 +2,9 @@ import Link from "next/link";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 const navLinks = [
-  { title: "Home", link: "#" },
-  { title: "About", link: "#about" },
+  { title: "Home", link: "/" },
   { title: "Skills", link: "#skills" },
+  { title: "About", link: "#about" },
   { title: "Projects", link: "#projects" },
   { title: "Contact", link: "#contact" },
 ];

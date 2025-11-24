@@ -13,8 +13,8 @@ const ContactHeader = () => {
       className="text-center mb-16"
     >
       <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-500 text-sm mb-6">
-        <Briefcase className="w-4 h-4" />
-        <p className="font-medium">Open to Opportunities</p>
+        <Briefcase className="sm:size-4 size-3" />
+        <p className="sm:text-sm text-xs font-medium">Open to Opportunities</p>
       </div>
 
       <h2 className="md:text-5xl min-[400px]:text-4xl text-3xl font-bold min-[400px]:mb-4 mb-2.5">
