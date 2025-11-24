@@ -22,15 +22,25 @@ const SkillCard = ({ tabValue, skillData }: Props) => {
     <TabsContent value={tabValue} className="max-w-5xl mx-auto mt-16 w-full">
       <motion.div
         initial="hidden"
-        animate="show"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={{
+          hidden: {},
+          show: {
+            transition: {
+              staggerChildren: 0.15,
+            },
+          },
+        }}
         className="grid min-[972px]:grid-cols-3 min-[580px]:grid-cols-2 grid-cols-3 min-[580px]:gap-4 gap-2.5 transition-all duration-300 ease-out"
       >
         {skillData.map((skill, index) => (
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: index * 0.15 }}
+            variants={{
+              hidden: { opacity: 0, y: 30 },
+              show: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.4 }}
             key={skill.name}
             className="transition-all duration-300 ease-out"
           >
