@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import NavLinks from "./NavLinks";
 
 export const navLinks = [
-  { title: "Home", link: "/" },
+  { title: "Home", link: "#home" },
   { title: "Skills", link: "#skills" },
   { title: "About", link: "#about" },
   { title: "Projects", link: "#projects" },
@@ -42,7 +42,7 @@ const NavContent = () => {
       }`}
     >
       <nav className="max-container flex items-center justify-center">
-        <div className="bg-white/10 backdrop-blur-md border border-white/20 px-1.5 py-1.5 min-[460px]:text-[15px] min-[420px]:text-sm text-xs rounded-full">
+        <div className="bg-white/5 backdrop-blur-md border border-white/20 px-1.5 py-1.5 min-[460px]:text-[15px] min-[420px]:text-sm text-xs rounded-full">
           <NavLinks />
         </div>
       </nav>

@@ -30,7 +30,10 @@ export const socialIcons = [
 
 const HeroSection = () => {
   return (
-    <section className="max-w-5xl mx-auto px-4 min-h-screen flex justify-center lg:mt-6 mt-12">
+    <section
+      className="max-w-5xl mx-auto px-4 min-h-screen flex justify-center lg:mt-6 mt-12"
+      id="home"
+    >
       <div className="flex flex-col-reverse lg:flex-row items-center justify-center lg:gap-16 gap-10">
         {/* First Column */}
         <HeroDetails />
