@@ -1,4 +1,4 @@
-# 🚀 Khant Zaw Thein - Portfolio
+# 🚀 Portfolio
 
 A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features a sleek design, smooth animations, and a fully functional contact form.
 
@@ -10,7 +10,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 ## ✨ Features
 
 - **⚡ Modern Stack**: Built with Next.js 16, React 19, and TypeScript
-- **🎨 Beautiful UI**: Professional design with smooth animations using Framer Motion
+- **🎨 Beautiful UI**: Professional design with smooth animations using TailwindCSS and Framer Motion
 - **📱 Fully Responsive**: Optimized for all devices and screen sizes
 - **📧 Contact System**: Integrated email functionality with Resend
 - **🚀 Performance**: Optimized for speed and SEO
@@ -39,9 +39,9 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 ## 🎯 Key Sections
 
 - **Hero**: Compelling introduction with call-to-action
+- **Skills**: Comprehensive tech stack visualization
 - **About**: Professional story and technical expertise
 - **Projects**: Showcase of 3+ production-ready applications
-- **Skills**: Comprehensive tech stack visualization
 - **Contact**: Functional contact form with email integration
 
 ## 🚀 Getting Started
