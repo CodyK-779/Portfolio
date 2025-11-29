@@ -1,41 +1,58 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features a sleek design, smooth animations, and a fully functional contact form.
 
-First, run the development server:
+![Portfolio Preview](https://img.shields.io/badge/Portfolio-Live-success)
+![Next.js](https://img.shields.io/badge/Next.js-15.0.0-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+![Tailwind](https://img.shields.io/badge/Tailwind-CSS-38B2AC)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **⚡ Modern Stack**: Built with Next.js 16, React 19, and TypeScript
+- **🎨 Beautiful UI**: Professional design with smooth animations using TailwindCSS and Framer Motion
+- **📱 Fully Responsive**: Optimized for all devices and screen sizes
+- **📧 Contact System**: Integrated email functionality with Resend
+- **🚀 Performance**: Optimized for speed and SEO
+- **🎯 Production Ready**: 3+ full-stack applications showcased
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠 Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Frontend
+- **Framework**: Next.js 16 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Animations**: Framer Motion
+- **Icons**: Remix Icons
 
-## Learn More
+### Backend & APIs
+- **Email Service**: Resend
+- **Deployment**: Vercel
+- **Forms**: React Hook Form with Zod validation
 
-To learn more about Next.js, take a look at the following resources:
+### Development Tools
+- **Package Manager**: npm
+- **Version Control**: Git
+- **Code Quality**: ESLint, Prettier
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Key Sections
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Hero**: Compelling introduction with call-to-action
+- **Skills**: Comprehensive tech stack visualization
+- **About**: Professional story and technical expertise
+- **Projects**: Showcase of 3+ production-ready applications
+- **Contact**: Functional contact form with email integration
 
-## Deploy on Vercel
+## 🚀 Getting Started
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
+- Node.js 18.18 or later
+- npm or yarn
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# Portfolio
-Portfolio website built with Next.js 16, Typescript, Tailwindcss and Resend
->>>>>>> 37d496b30e96f4e14e98017e4325bc75a6240749
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/CodyK-779/Portfolio.git
+   cd portfolio
