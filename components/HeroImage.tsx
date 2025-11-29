@@ -13,7 +13,7 @@ const HeroImage = () => {
     >
       <div className="lg:size-[425px] md:size-[400px] sm:size-[350px] min-[450px]:size-[250px] min-[400px]:size-[225px] size-[200px] aspect-square rounded-2xl shadow-[0_0_30px_rgba(139,92,246,0.4)]">
         <TiltedCard
-          imageSrc="/test.jpeg"
+          imageSrc="/avatar.jpg"
           altText="Profile Picture"
           captionText="Khant Zaw Thein"
           containerHeight="100%"

@@ -26,8 +26,8 @@ const HeroDetails = () => {
       <p className="min-[450px]:text-base min-[350px]:text-sm text-xs mt-4 mb-6 text-neutral-300">
         I specialize in building scalable and responsive Full-Stack applications
         using <strong>Next.js</strong>, <strong>TypeScript</strong>,{" "}
-        <strong>Prisma</strong> and <strong>TailwindCSS</strong> with a focus on
-        clean UI and secure authentication powered by{" "}
+        <strong>Prisma</strong> and <strong>TailwindCSS—</strong> with a focus
+        on clean UI and secure authentication powered by{" "}
         <strong>Better-Auth</strong>.
       </p>
       <div className="flex items-center lg:justify-start justify-center gap-4">
