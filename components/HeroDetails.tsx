@@ -27,8 +27,8 @@ const HeroDetails = () => {
         I specialize in building scalable and responsive Full-Stack applications
         using <strong>Next.js</strong>, <strong>TypeScript</strong>,{" "}
         <strong>Prisma</strong> and <strong>TailwindCSS—</strong> with a focus
-        on clean UI and secure authentication powered by{" "}
-        <strong>Better-Auth</strong>.
+        on clean UI and secure authentication using <strong>Better-Auth</strong>
+        .
       </p>
       <div className="flex items-center lg:justify-start justify-center gap-4">
         <RainbowButton

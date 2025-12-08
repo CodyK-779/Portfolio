@@ -31,11 +31,14 @@ const AboutLeft = () => {
             </p>
             <p className="sm:text-lg min-[400px]:text-base min-[350px]:text-sm text-xs text-white/90 leading-relaxed font-medium">
               With expertise across the full stack—from the UI (
-              <strong className="text-yellow-400">
+              <span className="text-yellow-400">
                 Next.js, React, Tailwind CSS
-              </strong>
-              ) to the backend and database. I build cohesive, scalable systems
-              that stand up to real-world demands.
+              </span>
+              ) to the backend and database (
+              <span className="text-yellow-400">
+                Prisma, PostgreSQL, Better-Auth
+              </span>
+              ). I build scalable systems designed for real-world use.
             </p>
           </div>
         </div>
