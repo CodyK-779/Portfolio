@@ -42,9 +42,6 @@ const ContactLeft = () => {
         ))}
       </div>
 
-      {/* Social Icons */}
-      {/* <ContactSocials /> */}
-
       {/* Remote Work Ready */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}

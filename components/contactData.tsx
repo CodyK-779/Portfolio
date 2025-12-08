@@ -4,8 +4,8 @@ export const contactMethods = [
   {
     icon: <Mail className="min-[425px]:size-5 size-4" />,
     label: "Email",
-    value: "khantzawthein779@gmail.com",
-    href: "mailto:your.email@example.com",
+    value: "khantzawthein21@gmail.com",
+    href: "mailto:khantzawthein21@gmail.com",
     color: "from-blue-500 to-cyan-500",
   },
   {

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 const navLinks = [
-  { title: "Home", link: "/" },
+  { title: "Home", link: "#home" },
   { title: "Skills", link: "#skills" },
   { title: "About", link: "#about" },
   { title: "Projects", link: "#projects" },
@@ -31,7 +31,7 @@ const footerSocials = [
   {
     name: "LinkedIn",
     icon: "ri-linkedin-box-fill min-[350px]:text-xl text-lg",
-    link: "",
+    link: "https://www.linkedin.com/in/khant-zaw-thein/",
     color: "",
   },
 ];

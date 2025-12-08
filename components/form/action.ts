@@ -11,7 +11,7 @@ export const submitForm = async (formData: z.infer<typeof formSchema>) => {
   try {
     await resend.emails.send({
     from: `Portfolio <${process.env.RESEND_FROM_EMAIL}>`,
-    to: ['codyk9627@gmail.com'],
+    to: ['khantzawthein21@gmail.com'],
     subject: `Portfolio Message`,
     replyTo: formData.email,
     headers: {

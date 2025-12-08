@@ -37,12 +37,14 @@ const HeroDetails = () => {
         >
           <Link href="#projects">View My Projects</Link>
         </RainbowButton>
-        <RainbowButton
-          variant="outline"
-          className="sm:lg-rainbow-btn max-[375px]:sm-rainbow-btn font-medium"
-        >
-          Download CV{" "}
-        </RainbowButton>
+        <a href="/khantzawthein_web-dev_cv.pdf" download>
+          <RainbowButton
+            variant="outline"
+            className="sm:lg-rainbow-btn max-[375px]:sm-rainbow-btn font-medium"
+          >
+            Download CV
+          </RainbowButton>
+        </a>
       </div>
       {/* Socials */}
       <div className="flex items-center lg:justify-start justify-center gap-3 mt-8">

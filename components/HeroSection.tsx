@@ -17,7 +17,7 @@ export const socialIcons = [
   {
     icon: "ri-linkedin-box-fill",
     name: "Linkedin",
-    href: "#",
+    href: "https://www.linkedin.com/in/khant-zaw-thein/",
     color: "bg-blue-700",
   },
   {
