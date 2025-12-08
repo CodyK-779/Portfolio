@@ -47,7 +47,7 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18.18 or later
+- Node.js 18 or later
 - npm or yarn
 
 ### Installation
