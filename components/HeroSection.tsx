@@ -32,7 +32,7 @@ export const socialIcons = [
 ];
 
 const HeroSection = () => {
-  const [marginTop, setMarginTop] = useState("mt-4");
+  const [marginTop, setMarginTop] = useState("mt-0");
 
   useEffect(() => {
     const updateMargin = () => {
@@ -40,7 +40,7 @@ const HeroSection = () => {
         setMarginTop("mt-28");
       } else if (window.innerHeight < 730) {
         setMarginTop("mt-20");
-      } else if (window.innerHeight < 800) {
+      } else if (window.innerHeight < 760) {
         setMarginTop("mt-4");
       } else {
         setMarginTop("mt-0");
