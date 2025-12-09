@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import HeroDetails from "./HeroDetails";
 import HeroImage from "./HeroImage";
 
@@ -29,9 +32,29 @@ export const socialIcons = [
 ];
 
 const HeroSection = () => {
+  const [marginTop, setMarginTop] = useState("mt-4");
+
+  useEffect(() => {
+    const updateMargin = () => {
+      if (window.innerHeight < 600) {
+        setMarginTop("mt-28");
+      } else if (window.innerHeight < 730) {
+        setMarginTop("mt-20");
+      } else {
+        setMarginTop("mt-4");
+      }
+    };
+
+    updateMargin();
+
+    window.addEventListener("resize", updateMargin);
+
+    return () => window.removeEventListener("resize", updateMargin);
+  }, []);
+
   return (
     <section
-      className="max-w-5xl mx-auto px-4 min-h-screen flex justify-center lg:mt-6 mt-12"
+      className={`max-w-5xl mx-auto px-4 min-h-screen flex justify-center lg:mt-6 ${marginTop}`}
       id="home"
     >
       <div className="flex flex-col-reverse lg:flex-row items-center justify-center lg:gap-16 gap-10">
