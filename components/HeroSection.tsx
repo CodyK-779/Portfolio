@@ -40,8 +40,10 @@ const HeroSection = () => {
         setMarginTop("mt-28");
       } else if (window.innerHeight < 730) {
         setMarginTop("mt-20");
-      } else {
+      } else if (window.innerHeight < 800) {
         setMarginTop("mt-4");
+      } else {
+        setMarginTop("mt-0");
       }
     };
 
