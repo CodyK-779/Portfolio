@@ -37,7 +37,7 @@ const HeroDetails = () => {
         >
           <Link href="#projects">View My Projects</Link>
         </RainbowButton>
-        <a href="/khantzawthein_web-dev_cv.pdf" download>
+        <a href="/khantzawthein_full-stack_cv.pdf" download>
           <RainbowButton
             variant="outline"
             className="sm:lg-rainbow-btn max-[375px]:sm-rainbow-btn font-medium"
