@@ -1,11 +1,11 @@
 export const projectsData = [
   {
-    title: "Blog-Studio",
-    desc: "A modern, full-stack blog website with secure authentication. Users can create posts with images and different categories, engage with likes and comments, while admins manage users and posts.",
-    link: "https://blog-studio-kzt.vercel.app",
-    github: "https://github.com/CodyK-779/Blog-Studio.git",
-    image: "/blog.png",
-    image2: "/blog-2.png",
+    title: "Noxus",
+    desc: "A high-performance game discovery platform built with Next.js 16, focused on fast and scalable data fetching. Explore games with advanced filters, infinite scrolling, and debounced search. Game detail pages with trailers, screenshots, and system requirements. Includes authentication and wishlist system with optimized server-side caching.",
+    link: "https://noxus-kzt.vercel.app",
+    github: "https://github.com/CodyK-779/Noxus.git",
+    image: "/noxus.png",
+    image2: "/noxus-2.png",
     tools: [
       {
         name: "Next.js",
@@ -30,10 +30,6 @@ export const projectsData = [
       {
         name: "PostgreSQL",
         icon: "/postgre2.png"
-      },
-      {
-        name: "EdgeStore",
-        icon: "/edgestore.png"
       },
       {
         name: "Framer-Motion",
@@ -138,3 +134,4 @@ export const projectsData = [
     ],
   }
 ]
+

@@ -72,9 +72,9 @@ export const allSkills = [
     color: ["#f05032", "#e03512", "#f05032", "#e03512"],
   },
   {
-    name: "Vercel",
-    img: "/vercel.png",
-    desc: "Cloud platform",
+    name: "Zustand",
+    img: "/zustand.png",
+    desc: "State Management",
     color: ["#ffffff", "#94a3b8", "#ffffff", "#94a3b8"],
   },
   {
@@ -84,10 +84,10 @@ export const allSkills = [
     color: ["#ff6b6b", "#4ecdc4", "#45b7d1", "#96ceb4", "#feca57", "#ff9ff3"],
   },
   {
-    name: "VS Code",
-    img: "/vscode.png",
-    desc: "Code editor",
-    color: ["#007acc", "#005a9e", "#007acc", "#005a9e"]
+    name: "Vercel",
+    img: "/vercel.png",
+    desc: "Cloud Platform",
+    color: ["#ffffff", "#94a3b8", "#ffffff", "#94a3b8"],
   }
 ]
 
@@ -177,9 +177,9 @@ export const toolsData = [
     color: ["#f05032", "#e03512", "#f05032", "#e03512"],
   },
   {
-    name: "Vercel",
-    img: "/vercel.png",
-    desc: "Cloud platform",
+    name: "Zustand",
+    img: "/zustand.png",
+    desc: "State Management",
     color: ["#ffffff", "#94a3b8", "#ffffff", "#94a3b8"],
   },
   {
@@ -189,9 +189,9 @@ export const toolsData = [
     color: ["#ff6b6b", "#4ecdc4", "#45b7d1", "#96ceb4", "#feca57", "#ff9ff3"],
   },
   {
-    name: "VS Code",
-    img: "/vscode.png",
-    desc: "Code editor",
-    color: ["#007acc", "#005a9e", "#007acc", "#005a9e"]
+    name: "Vercel",
+    img: "/vercel.png",
+    desc: "Cloud Platform",
+    color: ["#ffffff", "#94a3b8", "#ffffff", "#94a3b8"],
   }
 ]

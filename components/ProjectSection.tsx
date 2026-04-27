@@ -45,7 +45,7 @@ const ProjectSection = () => {
               />
             </div>
           </a>
-          <div className="p-4 relative min-h-[380px]">
+          <div className="p-4 relative min-[1180px]:min-h-[425px] min-h-[380px]">
             <div className="pb-16 sm:pb-0">
               <h3 className="text-lg font-semibold mb-2">{data.title}</h3>
               <p className="min-[375px]:text-sm text-xs text-neutral-300">
